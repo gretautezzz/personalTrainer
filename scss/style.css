@@ -122,6 +122,8 @@ body {
 
 h3 {
     font-family: "Pirata One", system-ui;
+    font-size: 35px;
+    padding: 20px;
 }
 
 .expertise-container {
@@ -191,7 +193,7 @@ h3 {
     color: #333;
     /* Dark grey text color */
     margin-bottom: 20px;
-    /* Space below the quote */
+    /* Space below the quote */ 
     font-style: italic;
     /* Italicize the quote */
     position: relative;
