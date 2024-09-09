@@ -1,0 +1,10 @@
+$primary-color: #ED042E;
+$secondary-color: #59636A;
+$third-color: #2E353C;
+
+
+h1 {
+    font-size: clamp(39px, 5vw, 61px);
+    line-height: clamp(47px, 5vw, 73px);
+    font-weight: 900;
+}

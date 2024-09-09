@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #59636A;
+    line-height: 24px;
+}
+
+/* Image Styles */
+.header-logo {
+    max-width: 100%;
+    /* Responsive: Adjusts according to container */
+    height: auto;
+    /* Keeps aspect ratio */
+}
+
+/* Container Styles */
+.header-container {
+    display: flex;
+    /* Enables flexbox */
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 25vh;
+    /* Full viewport height for centering */
+    background: rgb(51, 51, 51);
+    /* Example background color */
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    /* Set the width of the container */
+    height: 100vh;
+    /* Set the height of the container (100vh means 100% of the viewport height) */
+    background-image: url('../img/hero-image.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    background-position: center;
+    /* Centers the image in the container */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+.hero-container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container-text {
+    max-width: 100%;
+    /* Responsive: Adjusts according to container */
+    height: auto;
+    /* Keeps aspect ratio */
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    /* Center the button */
+}
+
+/* Button Styles */
+.btn {
+    font-family: "Roboto";
+    display: inline-block;
+    /* Makes the button inline and block-level */
+    padding: 15px 30px;
+    /* Button padding */
+    font-size: 18px;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+    color: #fff;
+    /* Text color */
+    background-color: #ED042E;
+    /* Primary button color (blue) */
+    border: none;
+    /* No border */
+    border-radius: 30px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* Removes underline from links */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+/* Button Hover Effects */
+.btn:hover {
+    background-color: #ED042E;
+    /* Darker blue on hover */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
+    color: #fff;
+    /* Text color remains white */
+    transform: translateY(-3px);
+    /* Lifts the button on hover */
+}
+
+/* Button Active (Click) Effects */
+.btn:active {
+    transform: translateY(1px);
+    /* Slight push down effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    /* Softer shadow */
+}
+
+h3 {
+    font-family: "Pirata One", system-ui;
+}
+
+.expertise-container {
+    text-align: center;
+    background-color: #59636A;
+    color: white;
+}
+
+.expertise-container h1 {
+    padding-top: 28px;
+
+}
+
+.card__content {
+    padding: 28px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    /* White background for the section */
+    padding: 50px 20px;
+    /* Section padding */
+    text-align: center;
+    /* Center-align text */
+}
+
+.testimonial-container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center the content */
+    align-items: stretch;
+    /* Stretch items equally */
+    flex-wrap: wrap;
+    /* Wrap items if needed */
+    gap: 30px;
+    /* Space between testimonials */
+    max-width: 1200px;
+    /* Max width of the section */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+/* Individual Testimonial */
+.testimonial {
+    background-color: #f9f9f9;
+    /* Light grey background for testimonials */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 30px;
+    /* Padding inside testimonials */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for a 3D effect */
+    flex: 1 1 300px;
+    /* Flexbox: grow and shrink with a base width */
+    max-width: 350px;
+    /* Max width of individual testimonial */
+    position: relative;
+    /* For the quotation mark styling */
+}
+
+/* Quote Styles */
+.quote {
+    font-size: 18px;
+    /* Font size for quotes */
+    color: #333;
+    /* Dark grey text color */
+    margin-bottom: 20px;
+    /* Space below the quote */
+    font-style: italic;
+    /* Italicize the quote */
+    position: relative;
+    /* For pseudo-element positioning */
+}
+
+.quote::before {
+    content: "“";
+    /* Opening quotation mark */
+    font-size: 50px;
+    /* Large font size */
+    color: #ED042E;
+    /* Quotation mark color */
+    position: absolute;
+    /* Absolute positioning */
+    top: -10px;
+    /* Positioning the mark */
+    left: -10px;
+    /* Positioning the mark */
+}
+
+/* Author Information */
+
+.author-name {
+
+    font-size: 16px;
+    /* Font size for author name */
+    font-weight: bold;
+    /* Bold text */
+    margin: 0;
+    /* Remove margin */
+    color: #333;
+    /* Text color */
+    align-items: center;
+    /* Center items vertically */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #2E353C;
+    /* Dark background color */
+    padding: 60px 20px;
+    /* Section padding */
+    text-align: center;
+    /* Center-align text */
+}
+
+.contact-container {
+    max-width: 600px;
+    /* Max width for the contact form */
+    margin: 0 auto;
+    /* Center the container */
+    color: #fff;
+    /* Text color for dark background */
+}
+
+/* Contact Title and Description */
+.contact-title {
+    color: white;
+    font-size: 32px;
+    /* Font size for title */
+    margin-bottom: 20px;
+    /* Spacing below title */
+}
+
+.contact-description {
+    font-size: 18px;
+    /* Font size for description */
+    margin-bottom: 40px;
+    /* Spacing below description */
+    color: #ccc;
+    /* Lighter text color for description */
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #59636A;
+    /* Slightly lighter dark background */
+    padding: 30px;
+    /* Form padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    /* Spacing between form fields */
+    text-align: left;
+    /* Align text to the left */
+}
+
+/* Form Labels */
+.form-group label {
+    display: block;
+    /* Block-level to separate label and input */
+    margin-bottom: 5px;
+    /* Spacing below labels */
+    color: #fff;
+    /* White text color for labels */
+}
+
+/* Form Inputs and Textareas */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding inside inputs */
+    font-size: 16px;
+    /* Font size for input text */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #333;
+    /* Dark input background */
+    color: #fff;
+    /* White text */
+    outline: none;
+    /* No outline on focus */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+    /* Placeholder text color */
+}
+
+/* Submit Button */
+.btn-submit {
+    display: inline-block;
+    /* Inline-block for proper padding */
+    padding: 12px 30px;
+    /* Button padding */
+    font-size: 18px;
+    /* Font size */
+    color: #fff;
+    /* Text color */
+    background-color: #ED042E;
+    /* Button background color */
+    border: none;
+    /* No border */
+    border-radius: 30px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* No underline */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth background-color transition */
+    margin-top: 10px;
+    /* Spacing above the button */
+}
+
+/* Button Hover Effects */
+.btn-submit:hover {
+    background-color: #ED042E;
+    /* Darker blue on hover */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1a1a1a;
+    /* Dark background for the footer */
+    padding: 40px 20px;
+    /* Padding for the footer */
+    text-align: center;
+    /* Center-align content */
+    color: #fff;
+    /* Text color */
+}
+
+.footer-container {
+    max-width: 1200px;
+    /* Maximum width for the footer container */
+    margin: 0 auto;
+    /* Center the footer container */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-wrap: wrap;
+    /* Wrap items if needed */
+    justify-content: space-between;
+    /* Space between the items */
+    align-items: center;
+    /* Center items vertically */
+}
+
+/* Logo Section */
+.footer-logo img {
+    width: 120px;
+    /* Logo width */
+    margin-bottom: 20px;
+    /* Margin below the logo */
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-bottom: 20px;
+    /* Margin below social icons for small screens */
+}
+
+.social-icon {
+    display: inline-block;
+    /* Inline block for proper spacing */
+    color: white;
+    /* Icon color */
+    background-color: #333;
+    /* Background color for the icons */
+    width: 40px;
+    /* Width of the icon container */
+    height: 40px;
+    /* Height of the icon container */
+    line-height: 40px;
+    /* Center icons vertically */
+    border-radius: 50%;
+    /* Circular icons */
+    text-align: center;
+    /* Center icons horizontally */
+    margin: 0 10px;
+    /* Spacing between icons */
+    font-size: 18px;
+    /* Icon font size */
+    transition: background-color 0.3s ease;
+    /* Smooth hover transition */
+}
+
+.social-icon:hover {
+    background-color: #ED042E;
+    /* Blue color on hover */
+}
+
+/* Footer Links */
+.footer-links {
+    margin-top: 20px;
+    /* Margin above the links */
+}
+
+.footer-links a {
+    color: #ccc;
+    /* Lighter text color for links */
+    text-decoration: none;
+    /* Remove underline */
+    margin: 0 15px;
+    /* Spacing between links */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #fff;
+    /* White color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .social-media {
+        margin-bottom: 20px;
+        /* Additional margin below social icons */
+    }
+}
